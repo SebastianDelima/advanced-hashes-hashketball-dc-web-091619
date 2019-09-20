@@ -136,7 +136,7 @@ return players_name
 end
 
 def winning_team
-  team1 = game_hash[:home][:players][0][:points] + game_hash[:home][:players][1][:points] + game_hash[:home][:players][2][:points] + game_hash[:home][:players][3][:points] + game_hash[:home][:players][4][:points]
+  team1 = game_hash[:home][:players]
  
   team2 = 0
   binding.pry
