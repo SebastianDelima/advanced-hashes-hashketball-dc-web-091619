@@ -123,11 +123,16 @@ end
 
 def most_points_scored
   players_name = ""
+  count = 0
    game_hash.each do |key, values|
     values[:players].each do |attributes|
-  binding.pry
-end
-end
+      if count < attributes[:points]
+        count = attributes[:points]
+        players_name = attributes[:player_name]
+    end
+   end
+  end
+return players_name
 end
 
 
