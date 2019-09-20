@@ -154,6 +154,8 @@ end
 def player_with_longest_name
   game_hash.each do |key, values|
     values[:players].each do |attributes|
+      count = 0 
+      if count < 
       binding.pry
 end
 end
