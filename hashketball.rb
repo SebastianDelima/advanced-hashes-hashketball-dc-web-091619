@@ -112,8 +112,8 @@ def big_shoe_rebounds
     attributes.each do |stats, stats_value|
     binding.pry
   end
+ end
 end
-
 
 
 
