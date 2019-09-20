@@ -114,11 +114,11 @@ def big_shoe_rebounds
     if count < attributes[:shoe]
       count = attributes[:shoe]
       return attributes[:rebounds]
-    binding.pry
+    # binding.pry
   end
  end
 end
-
+end
 
 
 
