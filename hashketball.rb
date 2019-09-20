@@ -143,7 +143,7 @@ def winning_team
    end
       game_hash[:away][:players].each do |attributes2|
      team2 += attributes2[:points]
-    end 
+   
     if team1 > team2
       return game_hash[:home][:team_name]
     else
