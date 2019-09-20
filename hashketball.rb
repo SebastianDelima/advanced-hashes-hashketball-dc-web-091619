@@ -159,14 +159,15 @@ def player_with_longest_name
       if count < attributes[:player_name].length
         count = attributes[:player_name].length
         name = attributes[:player_name]
-      # binding.pry
     end
   end
 end
 return name
 end
 
-
+def long_name_steals_a_ton?
+  
+end
 
 
 
