@@ -160,6 +160,7 @@ def player_with_longest_name
         count = attributes[:player_name].length
         name = attributes[:player_name]
       binding.pry
+    end
 end
 end
 return name
