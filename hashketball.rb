@@ -166,10 +166,21 @@ return name
 end
 
 def long_name_steals_a_ton?
-  player = player_with_longest_name
-  
-  binding.pry
+  count2 = 0
+  count = 0
+  name = ''
+  game_hash.each do |key, values|
+    values[:players].each do |attributes|
+      if count < attributes[:player_name].length
+        count = attributes[:player_name].length
+        name = attributes[:player_name]
+      end
+      binding.pry
+    end
+  end
 end
+end
+ 
 
 #Write a method that returns true if the player with the longest name had the most steals. Call the method long_name_steals_a_ton?.
 
