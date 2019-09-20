@@ -109,7 +109,7 @@ end
 
 def big_shoe_rebounds
   game_hash.each do |key, values|
-    values[:players] do |stats, attributes|
+    values[:players] do | attributes|
     binding.pry
   end
  end
