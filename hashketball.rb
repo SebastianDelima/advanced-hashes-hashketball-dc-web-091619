@@ -152,10 +152,10 @@ def winning_team
 end
 
 def player_with_longest_name
+  count = 0
   name = ''
   game_hash.each do |key, values|
     values[:players].each do |attributes|
-      count = 0 
       if count < attributes[:player_name].length
         count = attributes[:player_name].length
         name = attributes[:player_name]
