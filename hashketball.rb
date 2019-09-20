@@ -179,7 +179,7 @@ def long_name_steals_a_ton?
       end
       if steals < attributes[:steals]
         steals = attributes[:steals]
-      binding.pry
+      # binding.pry
     end
     end
   end
