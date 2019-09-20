@@ -138,7 +138,7 @@ end
 def winning_team
   team1 = 0
   team2 = 0
-   game_hash[:home][:players].each do |key, value|
+   game_hash[:home][:players].each do |key|
   binding.pry
 end
 end
