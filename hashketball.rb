@@ -146,6 +146,7 @@ def winning_team
   # binding.pry
 end
 end
+return team2
 return team1
 end
 
