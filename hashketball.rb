@@ -166,7 +166,7 @@ return name
 end
 
 def long_name_steals_a_ton?
- 
+ steals_long_name = 0
   count = 0
   steals = 0 
   name = ''
@@ -175,10 +175,11 @@ def long_name_steals_a_ton?
       if count < attributes[:player_name].length
         count = attributes[:player_name].length
         name = attributes[:player_name]
+        steals_long_name = attributes[:steals]
       end
       if steals < attributes[:steals]
         steals = attributes[:steals]
-      # binding.pry
+      binding.pry
     end
     end
   end
