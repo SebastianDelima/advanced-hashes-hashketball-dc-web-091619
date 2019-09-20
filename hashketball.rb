@@ -136,7 +136,8 @@ return players_name
 end
 
 def winning_team
-  
+  team1 = game_hash[:home][:players][0]
+  team2 = 0
 end
 
 
