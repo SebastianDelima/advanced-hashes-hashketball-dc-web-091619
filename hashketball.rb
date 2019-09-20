@@ -83,6 +83,7 @@ def team_names
   return names
 end
 
+
 def player_numbers(team_name)
   team_jerseys = []
   game_hash.each do |data, attributes|
@@ -95,6 +96,7 @@ def player_numbers(team_name)
  return team_jerseys
 end
 
+
 def player_stats(player_name)
   game_hash.each do |description, values|
     values[:players].each do |attributes|
@@ -105,6 +107,7 @@ def player_stats(player_name)
     end
   end
 end
+
 
 
 def big_shoe_rebounds
@@ -121,6 +124,8 @@ def big_shoe_rebounds
  return rebounds
 end
 
+
+
 def most_points_scored
   players_name = ""
   count = 0
@@ -134,6 +139,8 @@ def most_points_scored
   end
 return players_name
 end
+
+
 
 def winning_team
   team1 = 0
@@ -151,6 +158,8 @@ def winning_team
   end
 end
 
+
+
 def player_with_longest_name
   count = 0
   name = ''
@@ -164,6 +173,8 @@ def player_with_longest_name
 end
 return name
 end
+
+
 
 def long_name_steals_a_ton?
  steals_long_name = 0
@@ -179,18 +190,16 @@ def long_name_steals_a_ton?
       end
       if steals < attributes[:steals]
         steals = attributes[:steals]
-      # binding.pry
-    end
-    end
-  end
+      end
+     end
+   end
   if steals == steals_long_name
     return true
   else 
     return false
-end
+ end
 end
 
-#Write a method that returns true if the player with the longest name had the most steals. Call the method long_name_steals_a_ton?.
 
 
 
