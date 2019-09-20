@@ -166,8 +166,9 @@ return name
 end
 
 def long_name_steals_a_ton?
-  count2 = 0
+ 
   count = 0
+  steals = 0 
   name = ''
   game_hash.each do |key, values|
     values[:players].each do |attributes|
@@ -175,6 +176,8 @@ def long_name_steals_a_ton?
         count = attributes[:player_name].length
         name = attributes[:player_name]
       end
+      if steals < attributes[:steals]
+        steals = attributes[:steals]
       binding.pry
     end
   end
