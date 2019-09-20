@@ -145,7 +145,7 @@ def winning_team
      team2 += attributes2[:points]
      
   # binding.pry
-end
+
 end
 return team2
 return team1
