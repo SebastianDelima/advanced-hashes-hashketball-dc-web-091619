@@ -171,7 +171,7 @@ def long_name_steals_a_ton?
   binding.pry
 end
 
-
+#Write a method that returns true if the player with the longest name had the most steals. Call the method long_name_steals_a_ton?.
 
 
 
