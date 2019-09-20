@@ -143,16 +143,19 @@ def winning_team
    end
       game_hash[:away][:players].each do |attributes2|
      team2 += attributes2[:points]
-   
     if team1 > team2
       return game_hash[:home][:team_name]
     else
       return game_hash[:away][:team_name]
     end
- end
+  end
 end
 
-
+def player_with_longest_name
+  game_hash.each do |key, values|
+    values[:players].each do |attributes|
+      binding.pry
+end
 
 
 
