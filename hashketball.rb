@@ -180,6 +180,7 @@ def long_name_steals_a_ton?
         steals = attributes[:steals]
       binding.pry
     end
+    end
   end
 end
 
