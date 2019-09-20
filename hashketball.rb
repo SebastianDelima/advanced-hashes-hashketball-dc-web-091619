@@ -152,13 +152,17 @@ def winning_team
 end
 
 def player_with_longest_name
+  name = ''
   game_hash.each do |key, values|
     values[:players].each do |attributes|
       count = 0 
-      if count < 
+      if count < attributes[:player_name].length
+        count = attributes[:player_name].length
+        name = attributes[:player_name]
       binding.pry
 end
 end
+return name
 end
 
 
